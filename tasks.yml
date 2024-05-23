@@ -10,7 +10,7 @@ settings:  # required
 
 
 ui:
-  task_url_template: https://gitlab.sreweek.ru/sre/submissions/-/tree/main/$GROUP_NAME/tasks/$TASK_NAME
+  task_url_template: https://gitlab.sreweek.ru/sre/sre-week/-/tree/main/$GROUP_NAME/$TASK_NAME
 
   # optional, any number of links
   links:
@@ -23,7 +23,7 @@ deadlines:
   deadlines: hard
 
   schedule:
-    - group: mmul
+    - group: memory
       enabled: true
       start: 2024-05-20 18:00:00
       steps:
