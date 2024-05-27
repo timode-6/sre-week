@@ -1,3 +1,2 @@
 def sum_a_b(a: float, b: float) -> float:
-    """Sum two numbers."""
-    return a + b
+    """return a sum of two numbers"""
