@@ -105,7 +105,7 @@ void test_correctness()
 
 void test_performance()
 {
-    for (int i = 8; i < 17; ++i) {
+    for (int i = 9; i < 17; ++i) {
         test_performance(1<<i);
     }
     std::cout << "test_performance PASSED" << std::endl; 

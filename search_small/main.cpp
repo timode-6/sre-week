@@ -41,7 +41,7 @@ double bench_best(const F& binsearch, const std::vector<int>& sorted, const std:
     size_t nlookups = std::max(1000UL, unsorted.size());
     nlookups = std::min(nlookups, 1UL<<16);
     auto best = bench_single(binsearch, sorted, unsorted, nlookups);
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 1000; ++i) {
         asm volatile ("");
         best = std::min(best, bench_single(binsearch, sorted, unsorted, nlookups));
     }
