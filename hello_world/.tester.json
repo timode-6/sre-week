@@ -1,0 +1,6 @@
+{
+    "allow_change": [
+        "hello_world.py"
+    ],
+    "test.sh": true
+}

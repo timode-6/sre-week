@@ -1,0 +1,7 @@
+{
+    "allow_change": [
+        "trace.bt"
+    ],
+    "test.sh": true
+}
+

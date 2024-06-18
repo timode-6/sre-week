@@ -1,0 +1,27 @@
+name: sre
+
+# course
+deadlines: hard
+second_deadline_max: 0.5
+low_demand_bonus_bound: 0.25
+max_low_demand_bonus: 1.0
+
+# checker
+system: python
+layout: group
+executor: sandbox
+
+# gitlab
+gitlab_url: https://gitlab.sreweek.ru
+default_branch: main
+course_group: sre
+public_repo: sre/sre-week
+students_group: sre/submissions
+# gitlab_service_name: Python Bot
+
+# manytask
+manytask_url: https://manytask.sreweek.ru/
+
+# info
+# lms_url: https://lk.yandexdataschool.ru/courses/2024-spring/7.1259-sre-week/
+
