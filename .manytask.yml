@@ -1,0 +1,66 @@
+version: 1
+
+
+settings:  # required
+  course_name: sreweek
+
+  gitlab_base_url: https://gitlab.sreweek.ru
+  public_repo: sre/sre-week
+  students_group: sre/submissions
+
+
+ui:
+  task_url_template: https://gitlab.sreweek.ru/sre/sre-week/-/tree/main/$TASK_NAME
+
+  # optional, any number of links
+  links:
+    "Contribute Manytask": https://github.com/manytask
+
+
+deadlines:
+  timezone: Europe/Moscow
+
+  deadlines: hard
+  schedule:
+    - group: bpftrace
+      enabled: true
+      start: 2024-06-19 19:00:00
+      end: 2024-07-03 23:59:00
+      tasks:
+        - task: bpftrace-1-write
+          score: 100
+        - task: bpftrace-2-mutex 
+          score: 200
+        - task: bpftrace-3-rpc 
+          score: 300
+    - group: search
+      enabled: true
+      start: 2024-06-19 19:00:00
+      end: 2024-07-03 23:59:00
+      tasks:
+        - task: search_small
+          score: 100
+        - task: search_medium
+          score: 200
+        - task: search_large
+          score: 200
+    - group:    sre
+      enabled: true
+      start: 2024-06-19 19:00:00
+      end: 2024-07-03 23:59:00
+      tasks:
+        - task: traces
+          score: 300
+        - task: retry
+          score: 200
+        - task: spscq
+          score: 200
+    - group:  tests
+      enabled: true
+      start: 2024-06-15 19:00:00
+      end: 2024-07-03 23:59:00
+      tasks:
+        - task: hello_world
+          score: 10
+        - task: sum_a_b
+          score: 10

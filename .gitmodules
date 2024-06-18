@@ -1,0 +1,6 @@
+[submodule "grader"]
+	path = grader
+	url = git@gitlab.com:slon/shad-grader.git
+[submodule "private"]
+	path = private
+	url = git@gitlab.com:savrus/shad-sre-private.git

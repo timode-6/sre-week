@@ -1,0 +1,54 @@
+- group:    test
+  start:    17-06-2024 00:00
+  deadline: 30-06-2024 23:59
+  second_deadline: 30-01-2024 23:59
+  tasks:
+    - task: hello_world
+      score: 200
+      url: https://gitlab.com/savrus/shad-sre/-/tree/main/spscq
+    - task: sum_a_b
+      score: 200
+      url: https://gitlab.com/savrus/shad-sre/-/tree/main/spscq
+
+- group:    ebpf
+  start:    17-06-2024 00:00
+  deadline: 30-06-2024 23:59
+  second_deadline: 30-01-2024 23:59
+  tasks:
+    - task: bpftrace-1-write
+      score: 100
+      url: https://gitlab.com/savrus/shad-sre/-/tree/main/mmul
+    - task: bpftrace-2-mutex 
+      score: 300
+      url: https://gitlab.com/savrus/shad-sre/-/tree/main/set
+    - task: bpftrace-3-rpc 
+      score: 300
+      url: https://gitlab.com/savrus/shad-sre/-/tree/main/sort
+
+- group:    binsearch
+  start:    17-06-2024 00:00
+  deadline: 30-06-2024 23:59
+  second_deadline: 30-01-2024 23:59
+  tasks:
+    - task: search_small
+      score: 100
+      url: https://gitlab.com/savrus/shad-sre/-/tree/main/search_small
+    - task: search_medium
+      score: 200
+      url: https://gitlab.com/savrus/shad-sre/-/tree/main/search_medium
+    - task: search_large
+      score: 200
+      url: https://gitlab.com/savrus/shad-sre/-/tree/main/search_large
+
+
+- group:    sre
+  start:    17-06-2024 00:00
+  deadline: 30-06-2024 23:59
+  second_deadline: 30-01-2024 23:59
+  tasks:
+    - task: traces
+      score: 100
+      url: https://gitlab.com/savrus/shad-sre/-/tree/main/search_small
+    - task: retry
+      score: 200
+      url: https://gitlab.com/savrus/shad-sre/-/tree/main/search_medium

@@ -1,0 +1,7 @@
+{
+    "allow_change": [
+        "retry.go"
+    ],
+    "test.sh": true
+}
+

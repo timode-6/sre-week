@@ -1,0 +1,6 @@
+{
+    "allow_change": [
+        "sum_a_b.py"
+    ],
+    "test.sh": true
+}

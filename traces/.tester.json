@@ -1,0 +1,7 @@
+{
+    "allow_change": [
+        "traces.go"
+    ],
+    "test.sh": true
+}
+

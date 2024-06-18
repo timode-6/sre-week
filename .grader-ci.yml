@@ -1,0 +1,6 @@
+grade:
+  image: cr.yandex/crpjvj048l53rlo5pt41/grader/shad-sre-qemu
+  only:
+    - /^submits/.*$/
+  script:
+    - cd /opt/shad && PYTHONPATH=grader python3 -m grader
