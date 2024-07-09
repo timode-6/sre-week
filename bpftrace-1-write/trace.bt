@@ -1,1 +1,18 @@
 // Your code goes here
+#!/usr/bin/env bpftrace
+
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
+BEGIN {
+    printf("Tracing dick writes from main.go... Hit Ctrl-C to end .\n");
+}
+
+tracepoint:syscalls:sys_enter_write{
+    @write_bytes[stack] = arg2;
+}
+
+END {
+    print(@write_bytes)
+}
