@@ -1,18 +1,24 @@
 // Your code goes here
 #!/usr/bin/env bpftrace
 
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
+#include <linux/sched.h>
 
-BEGIN {
-    printf("Tracing dick writes from main.go... Hit Ctrl-C to end .\n");
+BEGIN
+{
+    printf("Tracing disk writes for process 'main'...\n");
 }
 
-tracepoint:syscalls:sys_enter_write{
-    @write_bytes[stack] = arg2;
+tracepoint:syscalls:sys_enter_write
+/comm == "main"/
+{
+    @stacks[ustack] = count();
+    @bytes[ustack] = sum(args->count);
 }
 
-END {
-    print(@write_bytes)
+END
+{
+    printf("Disk write statistics:\n");
+    print(@stacks);
+    printf("\nBytes written per stack:\n");
+    print(@bytes);
 }
